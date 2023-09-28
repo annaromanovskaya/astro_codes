@@ -16,7 +16,7 @@ from astropy.io import ascii
 import warnings
 import os
 
-if __name__ == '__main__':
+def main():
     parser = argparse.ArgumentParser()
     # parser.add_argument('-i', '--input', nargs='+', type=str, required=True)
     parser.add_argument('-star', '--star', type=str, required=True, help= textwrap.dedent('''\
@@ -284,6 +284,9 @@ if __name__ == '__main__':
     if x.lower() == 'n':
         print('End program')
         pass
+
+if __name__ == '__main__':
+    main()
     
 
 # type: ignore

@@ -9,7 +9,7 @@ import math
 import argparse
 from ast import arg
 
-if __name__ == '__main__':
+def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('-i', '--input', type=str, required=True)
     parser.add_argument('-o', '--output', type=str, required=True)
@@ -234,3 +234,6 @@ if __name__ == '__main__':
     fig.tight_layout()
     fig.savefig(args.output, format='pdf', dpi=300)
     plt.show()
+
+if __name__ == '__main__':
+    main()

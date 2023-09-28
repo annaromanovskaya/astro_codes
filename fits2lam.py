@@ -8,7 +8,7 @@ from astropy.io import ascii
 import pandas as pd
 import argparse, textwrap
 
-if __name__ == '__main__':
+def main():
     parser = argparse.ArgumentParser(description='some information',
         usage='use "%(prog)s --help" for more information',
         formatter_class=argparse.RawTextHelpFormatter)
@@ -156,3 +156,6 @@ if __name__ == '__main__':
         df_wl.to_csv(args.output, sep=' ', header=False, index=False)
     else:
         df.to_csv(args.output, sep=' ', header=False, index=False)
+
+if __name__ == '__main__':
+    main()
